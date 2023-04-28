@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="image/translate.png"
+    />
+    <title>Translator app</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="txtarea">
+        <div class="text-area from">
+          <textarea placeholder="Write Text To Translate"></textarea>
+        </div>
+        <div class="text-area to">
+          <textarea readonly placeholder="Translation Here"></textarea>
+        </div>
+      </div>
+      <div class="contlols">
+        <div class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select></select>
+        </div>
+        <i class="fas fa-exchange"></i>
+        <div class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

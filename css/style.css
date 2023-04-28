@@ -1,0 +1,108 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Alkatra", cursive;
+  box-sizing: border-box;
+  /* text-transform: capitalize; */
+}
+body {
+  display: flex;
+  background: darkslategrey;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: #e3e3e3;
+  height: fit-content;
+  border-radius: 0 0 9px 9px;
+}
+
+.txtarea {
+  display: flex;
+}
+
+.txtarea .text-area {
+  height: 149px;
+}
+
+.txtarea textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  text-indent: 10px;
+  background: transparent;
+  margin: 0;
+  padding: 5px;
+}
+
+.txtarea textarea:focus {
+  outline: none;
+}
+
+.contlols {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.contlols .row {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.contlols .row .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+i {
+  font-size: 12px;
+  cursor: pointer;
+  color: rgb(60, 59, 59);
+}
+i:hover {
+  color: #3b89865d;
+}
+
+.contlols .row .icons i:first-child {
+  margin-right: 10px;
+}
+
+.contlols .row select {
+  border: 1px solid darkgray;
+  outline: none;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(60, 59, 59);
+  width: calc(100% - 100px);
+}
+@media (max-width: 768px) {
+  .txtarea {
+    display: flex;
+    flex-direction: column;
+  }
+  .txtarea textarea {
+    width: 328px;
+  }
+  .contlols .row select {
+    width: calc(100% - 85px);
+  }
+}
+@media (min-width: 768px){
+.txtarea {
+    display: flex;
+    flex-direction: row;
+  }
+  .txtarea textarea {
+    width: 100%;
+  }
+  .contlols .row select {
+    width: calc(100% - 100px);
+  }
+}
